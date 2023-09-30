@@ -1,0 +1,362 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.box {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+.navigation {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-y: visible;
+}
+.navigation__logo {
+  height: 58px;
+}
+.navigation__logo:nth-child(1) {
+  height: 72px;
+}
+.navigation__logo_container {
+  padding: 15px 0 15px 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.navigation__logo_img {
+  height: 100%;
+}
+.navigation__links {
+  padding: 8px 10px 8px 10px;
+  margin: 0;
+  width: auto;
+  display: block;
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  outline: none;
+}
+.navigation__links:nth-child(1) {
+  margin-top: 15px;
+}
+.navigation__links span {
+  text-align: center;
+  color: #fff;
+  display: inline;
+  margin: 20px;
+  position: relative;
+  z-index: 10;
+}
+.navigation__links span::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  border: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  margin-top: -8px;
+  top: 50%;
+  border-left: 8px solid #fff;
+  left: auto;
+  right: -8px;
+}
+.navigation__links a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-family: Roboto;
+  font-size: 18px;
+}
+.navigation__links_container {
+  background: linear-gradient(180deg, #6da90e, #0d09ed);
+  height: 100%;
+}
+.navigation__links li {
+  padding: 10px 0px 10px 0px;
+  list-style-type: none;
+}
+.navigation__links li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hide {
+  display: none;
+}
+
+.rotate::after {
+  transform: rotate(90deg);
+}
+
+.hover:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header {
+  margin-top: 20px;
+  width: 76%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.header__search {
+  height: 40px;
+}
+.header__search_img {
+  height: 100%;
+}
+.header__search_input {
+  margin-right: 40px;
+  width: 44%;
+  border: none;
+}
+.header__search_input:focus {
+  border: none;
+  outline: 0;
+}
+.header__search_input:active {
+  border: none;
+}
+.header__calendar {
+  margin-right: 40px;
+}
+.header__calendar_img {
+  height: 40px;
+}
+.header__language {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-left: 40px;
+  justify-content: space-between;
+  width: 60px;
+}
+.header__language_img {
+  height: 26px;
+}
+.header__profile {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 4px;
+}
+.header__profile_img {
+  height: 30px;
+}
+.header__exit {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  align-items: center;
+  align-content: center;
+}
+.header__exit_img {
+  margin-top: 5px;
+  height: 30px;
+}
+.header__item {
+  position: absolute;
+  right: 0px;
+  top: -30px;
+  width: 180px;
+}
+.header__item_img {
+  width: 100%;
+}
+.header__line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 66px;
+  background: linear-gradient(90deg, black, white 84%);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.footer__description_container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__description_info_container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__description_aboutSite {
+  margin-top: 20px;
+}
+.footer__description_developerInfo {
+  margin-top: 20px;
+}
+.footer .footer__image {
+  height: 210px;
+}
+.footer__socialMedia {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.footer__socialMedia_img {
+  width: 34px;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+.flex_column:nth-child(1) {
+  margin-right: 60px;
+}
+
+.footer__line {
+  position: absolute;
+  width: 64%;
+  height: 1px;
+  bottom: 20px;
+  background: linear-gradient(90deg, black, white 84%);
+}
+
+.businessTrip {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 74%;
+  margin-left: 3%;
+  margin-top: 100px;
+  min-height: 600px;
+  margin-bottom: 300px;
+}
+.businessTrip__title {
+  margin-top: 50px;
+  color: #154385;
+  font-size: 36px;
+  font-weight: 400;
+}
+.businessTrip__select {
+  width: 38%;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 4px rgba(45, 45, 45, 0.25);
+  padding: 8px 30px;
+  cursor: pointer;
+}
+.businessTrip__select option {
+  border: none;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+.businessTrip__select_img {
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  width: 20px;
+}
+.businessTrip__select_box {
+  position: relative;
+}
+.businessTrip #startDate {
+  margin-left: 10px;
+  background-color: #154385;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.businessTrip #endDate {
+  margin-left: 20px;
+  background-color: #154385;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.businessTrip input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  /* Скрыть стандартную иконку календаря в Chrome */
+}
+.businessTrip input[type=file] {
+  margin-left: 20px;
+  background-color: #154385;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.businessTrip input#file-upload-button {
+  background-color: #154385;
+}
+.businessTrip #file {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.businessTrip #file_label {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+.businessTrip .input-file-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #154385;
+  height: 30px;
+  padding: 0px 5px;
+  padding-top: 6px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+}

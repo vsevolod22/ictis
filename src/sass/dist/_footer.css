@@ -1,0 +1,52 @@
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.footer__description_container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__description_info_container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__description_aboutSite {
+  margin-top: 20px;
+}
+.footer__description_developerInfo {
+  margin-top: 20px;
+}
+.footer .footer__image {
+  height: 210px;
+}
+.footer__socialMedia {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.footer__socialMedia_img {
+  width: 34px;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+.flex_column:nth-child(1) {
+  margin-right: 60px;
+}
+
+.footer__line {
+  position: absolute;
+  width: 64%;
+  height: 1px;
+  bottom: 20px;
+  background: linear-gradient(90deg, black, white 84%);
+}

@@ -1,0 +1,104 @@
+.navigation {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-y:visible;
+    
+    &__logo {
+        height: 58px;
+        &:nth-child(1) {
+            height: 72px;
+        }
+        &_container {
+            padding: 15px 0 15px 0;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+            
+        }
+        &_img {
+            height: 100%;
+        }
+
+
+    }
+    &__links {
+        padding: 8px 10px 8px 10px;
+        margin: 0;
+
+        width: auto;
+        display: block;
+        color: #fff;
+        text-transform: none;
+        text-decoration: none;
+        text-align: left;
+        background: rgba(0, 0, 0, 0);
+        border: 0;
+        border-radius: 0;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: normal;
+        outline: none;
+
+        &:nth-child(1) {
+            margin-top: 15px;
+        }
+        span {
+            text-align: center;
+            color: #fff;
+            display: inline;
+            margin: 20px;
+            position: relative;
+            z-index: 10;
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                display: block;
+                position: absolute;
+                z-index: 10;
+                border: 0;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                margin-top: -8px;
+                top: 50%;
+                border-left: 8px solid #fff;
+                left: auto;
+                right: -8px;
+            }
+        }
+        a {
+            padding-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            border: 0;
+            border-radius: 0;
+            font-family: Roboto;
+            font-size: 18px;
+        }
+        &_container {
+            background: linear-gradient(180deg, rgb(109, 169, 14), rgb(13, 9, 237));
+            height: 100%;
+        }
+        li {
+            padding: 10px 0px 10px 0px;
+            list-style-type: none;
+            &:hover {
+                background-color: rgba($color: #fff, $alpha: 0.2);
+            }
+        }
+    }
+
+
+}
+.hide {
+    display: none;
+}
+.rotate::after {
+    transform: rotate(90deg);
+}
+.hover:hover {
+    background-color: rgba($color: #fff, $alpha: 0.2);
+}

@@ -1,0 +1,82 @@
+.header {
+  margin-top: 20px;
+  width: 76%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.header__search {
+  height: 40px;
+}
+.header__search_img {
+  height: 100%;
+}
+.header__search_input {
+  margin-right: 40px;
+  width: 44%;
+  border: none;
+}
+.header__search_input:focus {
+  border: none;
+  outline: 0;
+}
+.header__search_input:active {
+  border: none;
+}
+.header__calendar {
+  margin-right: 40px;
+}
+.header__calendar_img {
+  height: 40px;
+}
+.header__language {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-left: 40px;
+  justify-content: space-between;
+  width: 60px;
+}
+.header__language_img {
+  height: 26px;
+}
+.header__profile {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 4px;
+}
+.header__profile_img {
+  height: 30px;
+}
+.header__exit {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  align-items: center;
+  align-content: center;
+}
+.header__exit_img {
+  margin-top: 5px;
+  height: 30px;
+}
+.header__item {
+  position: absolute;
+  right: 0px;
+  top: -30px;
+  width: 180px;
+}
+.header__item_img {
+  width: 100%;
+}
+.header__line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 66px;
+  background: linear-gradient(90deg, black, white 84%);
+}

@@ -1,0 +1,64 @@
+.footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    &__description {
+
+
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        &_info {
+            &_container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &_aboutSite {
+            margin-top: 20px;
+        }
+
+        &_developerInfo {
+            margin-top: 20px;
+        }
+       
+    }
+    .footer__image {
+        height: 210px;
+    }
+    &__socialMedia {
+        width: 180px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+
+        &_img {
+            width: 34px;
+        }
+    }
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    &:nth-child(1) {
+        margin-right: 60px; 
+    }
+}
+.footer__line {
+    position: absolute;
+    width: 64%;
+    height: 1px;
+    bottom: 20px;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255) 84%);
+}

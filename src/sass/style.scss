@@ -1,0 +1,17 @@
+
+* {
+    font-family: 'Roboto', sans-serif
+}
+.box {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+
+@import "mixins";
+@import "media";
+@import 'navigation.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'businessTrip.scss';

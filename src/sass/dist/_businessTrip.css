@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.businessTrip {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 74%;
+  margin-left: 3%;
+  margin-top: 100px;
+  min-height: 600px;
+  margin-bottom: 300px;
+}
+.businessTrip__title {
+  margin-top: 50px;
+  color: #154385;
+  font-size: 36px;
+  font-weight: 400;
+}
+.businessTrip__select {
+  width: 38%;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 4px rgba(45, 45, 45, 0.25);
+  padding: 8px 30px;
+  cursor: pointer;
+}
+.businessTrip__select option {
+  border: none;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+.businessTrip__select_img {
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  width: 20px;
+}
+.businessTrip__select_box {
+  margin-top: 40px;
+  position: relative;
+}
+.businessTrip__description {
+  margin-top: 20px;
+}
+.businessTrip__boss {
+  margin-top: 30px;
+}
+.businessTrip #startDate {
+  margin-left: 10px;
+  background-color: #154385;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.businessTrip #endDate {
+  margin-left: 20px;
+  background-color: #154385;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.businessTrip input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  /* Скрыть стандартную иконку календаря в Chrome */
+}
+.businessTrip input[type=file] {
+  margin-left: 20px;
+  background-color: #154385;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.businessTrip input#file-upload-button {
+  background-color: #154385;
+}
+.businessTrip #file {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.businessTrip #file_label {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+.businessTrip .input-file-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #154385;
+  height: 30px;
+  padding: 0px 5px;
+  padding-top: 6px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+.businessTrip .input {
+  margin-left: 10px;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+  height: 30px;
+}
+.businessTrip #travelForm {
+  margin-top: 40px;
+}
+.businessTrip #first__label {
+  margin-top: 30px;
+}
+.businessTrip .form__submit {
+  margin-top: 20px;
+  background-color: #154385;
+  color: #fff;
+  border-radius: 8px;
+}
